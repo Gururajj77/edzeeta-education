@@ -20,7 +20,13 @@ const Footer = () => {
             <h3>Solutions</h3>
             <ul>
               <li>
-                <a href="#book">Book Your Slot</a>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSehUPDfRnf7mNFIw3O9nMl1t3yRYuJMgNsgV_qPejLvYyXciA/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book Your Slot
+                </a>
               </li>
               <li>
                 <a href="#business">Business</a>
