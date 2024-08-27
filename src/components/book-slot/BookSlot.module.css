@@ -1,0 +1,129 @@
+.prepContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.prepContent {
+  text-align: center;
+  border-radius: 20px;
+  max-width: 90%;
+  width: 100%;
+}
+
+.prepTitle {
+  font-size: clamp(1rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.subtitleWrapper {
+  text-align: center;
+  width: 90%;
+}
+
+.prepSubtitle {
+  font-size: clamp(1.3rem, 2vw, 1.2rem);
+}
+
+@media (max-width: 768px) {
+  .prepContainer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .prepContent {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .prepContainer {
+    padding: 1rem 0.25rem;
+  }
+
+  .prepContent {
+    max-width: 95%;
+  }
+
+  .prepTitle {
+    font-size: clamp(0.875rem, 3vw, 1.5rem);
+  }
+}
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.card {
+  background: linear-gradient(145deg, #00bf63 0%, #00a854 100%);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 191, 99, 0.2);
+  transition: all 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 191, 99, 0.3);
+}
+
+.cardIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardPrice {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bookButton {
+  background-color: white;
+  color: #00bf63;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bookButton:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+}

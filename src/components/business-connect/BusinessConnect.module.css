@@ -1,0 +1,118 @@
+.businessConnectContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.mainTitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  width: 100%; /* Ensure full width */
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 191, 99, 0.1);
+  transition: transform 0.3s ease;
+  flex: 1;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardIcon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  color: #00bf63;
+  margin-bottom: 1rem;
+}
+
+.cardButton {
+  background-color: #00bf63;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #00a854;
+}
+
+.closingText {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  text-align: center;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 800px;
+  width: 100%; /* Ensure full width */
+}
+
+@media (max-width: 768px) {
+  .businessConnectContainer {
+    padding: 2rem 0.5rem; /* Reduce horizontal padding */
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Reduce gap for tighter layout */
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .mainTitle,
+  .closingText {
+    padding: 0 1rem; /* Add some horizontal padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .businessConnectContainer {
+    padding: 1.5rem 0.25rem; /* Further reduce padding */
+  }
+
+  .card {
+    max-width: 95%; /* Allow cards to be slightly wider */
+  }
+
+  .mainTitle,
+  .closingText {
+    padding: 0 0.5rem; /* Reduce horizontal padding */
+  }
+}

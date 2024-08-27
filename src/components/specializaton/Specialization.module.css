@@ -1,0 +1,122 @@
+.prepContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.prepContent {
+  text-align: center;
+  border-radius: 20px;
+  max-width: 90%;
+  width: 100%;
+  padding: 1.5rem;
+  border: 2px solid #00bf63;
+  box-shadow: 0 4px 10px rgba(0, 191, 99, 0.1);
+}
+
+.prepTitle {
+  font-size: clamp(1rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.subtitleWrapper {
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+}
+
+.prepSubtitle {
+  font-size: clamp(1.3rem, 2vw, 1.2rem);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem; /* This creates equal gaps in both directions */
+  width: 100%;
+  padding: 2rem; /* Added padding to prevent items from touching container edges */
+}
+
+.gridItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemContent {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: clamp(1.2rem, 1.5vw, 1rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.itemLastContent {
+  background-color: #00bf63;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: clamp(1.2rem, 1.5vw, 1rem);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Slightly smaller gap for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .prepContainer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .prepContent {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .prepContainer {
+    padding: 1rem 0.25rem;
+  }
+
+  .prepContent {
+    max-width: 95%;
+    border-width: 1px;
+  }
+
+  .prepTitle {
+    font-size: clamp(0.875rem, 3vw, 1.5rem);
+  }
+  .gridContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem; /* Even smaller gap for very small screens */
+    padding: 2rem; /* Reduced padding for small screens */
+  }
+  .itemContent {
+    padding: 0.5rem;
+  }
+}

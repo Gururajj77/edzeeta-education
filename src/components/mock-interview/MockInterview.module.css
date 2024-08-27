@@ -1,0 +1,56 @@
+.prepContainer {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.prepContent {
+  text-align: center;
+  border-radius: 20px;
+  max-width: 90%;
+  width: 100%;
+}
+
+.prepTitle {
+  font-size: clamp(1rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.subtitleWrapper {
+  text-align: center;
+  width: 90%;
+}
+
+.prepSubtitle {
+  font-size: clamp(1.3rem, 2vw, 1.2rem);
+}
+
+@media (max-width: 768px) {
+  .prepContainer {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .prepContent {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .prepContainer {
+    padding: 1rem 0.25rem;
+  }
+
+  .prepContent {
+    max-width: 95%;
+  }
+
+  .prepTitle {
+    font-size: clamp(0.875rem, 3vw, 1.5rem);
+  }
+}

@@ -1,0 +1,55 @@
+.interviewContextContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.interviewContextTitle {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.boxesContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.box {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.box > p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .boxesContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .interviewContextWrapper {
+    padding: 1rem;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+}
